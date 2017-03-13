@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import java.util.ArrayList;
 
 /**
  * jfree listener
@@ -38,6 +39,7 @@ public class ContextLoaderListener extends ServletContextResource implements Ser
 
     @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
+        ArrayList
         try{
             ioc.destroyed();
             logger.info("jfree ioc destroyed success...");

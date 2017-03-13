@@ -14,7 +14,7 @@ import com.jfree.registry.annotation.RegistryService;
 public class DefaultRegistryAnnotationAdapter implements RegistryAnnotationAdapter {
 
 	@Override
-	public ServiceModel getServiceModelAdaptrt(Class<?> clazz, Method method) {
+	public ServiceModel getServiceModelAdapter(Class<?> clazz, Method method) {
 		ServiceModel serviceModel = new ServiceModel();
 		RegistryService registryService = method.getAnnotation(RegistryService.class);
 		if(registryService != null) {

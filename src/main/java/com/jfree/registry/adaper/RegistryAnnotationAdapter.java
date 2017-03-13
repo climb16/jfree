@@ -14,5 +14,5 @@ public interface RegistryAnnotationAdapter {
 	 * 适配服务模型
 	 * @return
 	 */
-	ServiceModel getServiceModelAdaptrt(Class<?> clazz, Method method);
+	ServiceModel getServiceModelAdapter(Class<?> clazz, Method method);
 }

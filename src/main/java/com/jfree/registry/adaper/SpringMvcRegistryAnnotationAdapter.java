@@ -17,7 +17,7 @@ import com.jfree.registry.annotation.RegistryService;
 public class SpringMvcRegistryAnnotationAdapter implements RegistryAnnotationAdapter {
 
 	@Override
-	public ServiceModel getServiceModelAdaptrt(Class<?> clazz, Method method) {
+	public ServiceModel getServiceModelAdapter(Class<?> clazz, Method method) {
 		ServiceModel serviceModel = new ServiceModel();
 		RequestMapping requestMapping = clazz.getAnnotation(RequestMapping.class);
 		if(requestMapping != null) this.setServiceModel(serviceModel, requestMapping);
